@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf') format('tff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Light.ttf') format('tff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Light.otf') format('otf');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+    padding: 0;
+    margin: 0;
+}
+#header {
+    display: flex;
+    height: 70px;
+    width: 89%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #B5B3B3;
+}
+#menu {
+    font-size: 20px;
+    display: flex;
+    width: 53%;
+    justify-content: space-between;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: center
+}
+
+#main {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 92px;
+    margin-top: 32px;
+    width: 89%;
+}
+
+
+#text2-main {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+#texts3-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+#info-main {
+    font-size: 20px;
+} 
+
+#main img {
+    margin-top: 13px;
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+#run-line{
+    width: 89%;
+    font-size: 92px;
+    border-top: 1px solid #1E1E1E;
+    border-bottom: 1px solid #1E1E1E;
+    overflow: hidden;
+    margin-bottom: 56px;
+}
+
+#test33 {
+    display: flex;
+    align-items: center;
+    width: 2232px;
+    overflow: hidden;
+    white-space: nowrap;    
+    position: relative;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
+
+#run-line img {
+    display: flex;
+    margin-left: 77px;
+    margin-right: 77px;
+}
+
+@media (max-width: 1200px) {
+    #main {
+        font-size: 76px;
+    }
+    #info-main {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #main {
+        font-size: 64px;
+    }
+    #info-main {
+        font-size: 14px;
+    }
+}
+
+
+
+/* .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Изначально картинка прозрачная */
+    /* transition: opacity 0.3s ease; Плавный переход */
+/* }
+
+.image-container:hover .overlay-image {
+    opacity: 1; /* Картинка становится видимой при наведении */
+/* } */
