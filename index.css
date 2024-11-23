@@ -27,11 +27,47 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #1E1E1E;
+    padding: 0;
+    margin: 0;
+    background-color: #F6F4F0;
+}
+
+p {
     padding: 0;
     margin: 0;
 }
+.inter {
+    font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.montserrat {
+    color: #1E1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 92px;
+    font-style: normal;
+}
+
+.block {
+    margin-bottom: 96px;
+    width: 89%;
+}
+
+.info-us {
+    display: flex;
+    justify-content: center;
+}
+
+.gray {
+    background-color: #EFEEEB;
+    opacity: 0.43;
+}
+
+
 #header {
     display: flex;
     height: 70px;
@@ -41,7 +77,6 @@ body {
     border-bottom: 1px solid #B5B3B3;
 }
 #menu {
-    font-size: 20px;
     display: flex;
     width: 53%;
     justify-content: space-between;
@@ -52,15 +87,14 @@ body {
     justify-content: center;
     margin-top: 16px;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    height: 100%;
 }
 
 #main {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 92px;
+    
     margin-top: 32px;
-    width: 89%;
+    
 }
 
 
@@ -77,10 +111,6 @@ body {
     align-items: center
 }
 
-#info-main {
-    font-size: 20px;
-} 
-
 #main img {
     margin-top: 13px;
     width: 100%;
@@ -89,31 +119,12 @@ body {
 }
 
 #run-line{
-    width: 89%;
-    font-size: 92px;
+    display: flex;
+    align-items: center;
     border-top: 1px solid #1E1E1E;
     border-bottom: 1px solid #1E1E1E;
     overflow: hidden;
     margin-bottom: 56px;
-}
-
-#test33 {
-    display: flex;
-    align-items: center;
-    width: 2232px;
-    overflow: hidden;
-    white-space: nowrap;    
-    position: relative;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%)
-    }
 }
 
 #run-line img {
@@ -123,20 +134,29 @@ body {
 }
 
 @media (max-width: 1200px) {
-    #main {
+    .montserrat {
         font-size: 76px;
     }
-    #info-main {
+    .inter {
         font-size: 16px;
     }
 }
 
 @media (max-width: 1000px) {
-    #main {
+    .montserrat {
         font-size: 64px;
     }
-    #info-main {
+    .inter {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .montserrat {
+        font-size: 50px;
+    }
+    .inter {
+        font-size: 12px;
     }
 }
 
