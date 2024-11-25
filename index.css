@@ -45,6 +45,14 @@ p {
     font-size: 20px;
 }
 
+.inter2 {
+    font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
 .montserrat {
     color: #1E1E1E;
     font-family: 'Montserrat', sans-serif;
@@ -121,7 +129,7 @@ p {
     justify-content: space-between; /* Равномерное распределение пространства между блоками */
     width: 90%; /* Занимает 90% ширины экрана */
     margin: 0 auto; /* Центрирование блока по горизонтали */
-    margin-bottom: 20px; /* Отступ между блоками */
+    margin-bottom: 96px;
 }
 
 .tour-images {
@@ -152,8 +160,50 @@ p {
     margin-top: 40px; /* Отступ сверху для второй картинки */
 }
 
+.program {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Равномерное распределение пространства между блоками */
+    width: 90%; /* Занимает 90% ширины экрана */
+    margin: 0 auto; /* Центрирование блока по горизонтали */
+    margin-bottom: 56px; /* Отступ между блоками */
+    margin-top: 56px;
+    
+}
 
+.days {
+    flex: 0 0 42%; /* Занимает 42% ширины родительского блока */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру по горизонтали */
+}
 
+.place {
+    flex: 0 0 58%; /* Занимает 58% ширины родительского блока */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 225px;
+}
+
+.list-days {
+    display: flex;
+    margin-top: 103px;
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 0; /* Убираем отступы по умолчанию */
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.list-days li {
+    margin-bottom: 16px; /* Добавляем расстояние между элементами */
+}
+
+.list-days .special-day {
+    font-size: 64px; /* Устанавливаем размер шрифта для "день 3" */
+}
 
 #header {
     display: flex;
