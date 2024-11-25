@@ -115,6 +115,46 @@ p {
     justify-content: space-between;
 }
 
+.block-on-tour {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Равномерное распределение пространства между блоками */
+    width: 90%; /* Занимает 90% ширины экрана */
+    margin: 0 auto; /* Центрирование блока по горизонтали */
+    margin-bottom: 20px; /* Отступ между блоками */
+}
+
+.tour-images {
+
+    flex: 1; /* Занимает половину доступного пространства */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tour-content {
+    flex: 1; /* Занимает половину доступного пространства */
+    display: flex;
+    flex-direction: column;
+}
+
+.nerpa {
+    display: flex;
+    margin-top: 235px;
+    align-items: flex-end;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.tour-images div:nth-child(2) {
+    margin-top: 40px; /* Отступ сверху для второй картинки */
+}
+
+
+
+
 #header {
     display: flex;
     height: 70px;
