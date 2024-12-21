@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url('./fonts/Montserrat-Regular.ttf') format('tff');
@@ -27,8 +31,11 @@
 }
 
 body {
+    width: 1440px;
     padding: 0;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #F6F4F0;
 }
 
@@ -75,6 +82,20 @@ p {
     font-weight: normal;
     font-size: 48px;
     font-style: normal;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: #EFEEEB;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #CECECE;
 }
 
 .block {
@@ -266,6 +287,16 @@ p {
     margin-bottom: 56px;
 }
 
+.cta-button:hover {
+    background-color: #969696;
+    border-color:#969696;
+}
+
+.cta-button:active {
+    background-color: #A61202;
+    border-color: #A61202;
+}
+
 .background-zagagulina {
     border-image: url("./image/zagagulina.png");
 }
@@ -357,10 +388,6 @@ p {
 #run-line{
     display: flex;
     align-items: center;
-    border-top: 1px solid #1E1E1E;
-    border-bottom: 1px solid #1E1E1E;
-    overflow: hidden;
-    margin-bottom: 56px;
 }
 
 #run-line img {
@@ -402,6 +429,29 @@ p {
     }
 }
 
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-top: 1px solid #1E1E1E;
+    border-bottom: 1px solid #1E1E1E;
+    margin-bottom: 56px;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Бесконечная анимация */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Начальная позиция: за пределами контейнера */
+    }
+    100% {
+        transform: translateX(-100%); /* Конечная позиция: за пределами контейнера слева */
+    }
+}
 
 
 /* .image-container {

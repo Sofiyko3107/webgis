@@ -13,26 +13,26 @@
                 <img src="./image/Vector.png"/>
             </div>
             <div id="menu">
-                <div class="inter">
+                <a class="inter" href="#tour">
                     о туре
                     <!-- <img src="./image/Vector 2.png" alt="Overlay Image" class="overlay-image"> -->
-                </div>
-                <div class="inter">
+                </a>
+                <a class="inter" href="#us">
                     кто мы
                     <!-- <img src="./image/Vector 2.png" alt="Overlay Image" class="overlay-image"> -->
-                </div>
-                <div class="inter">
+                </a>
+                <a class="inter" href="#programm">
                     программа
                     <!-- <img src="./image/Vector 2.png" alt="Overlay Image" class="overlay-image"> -->
-                </div>
-                <div class="inter">
+                </a>
+                <a class="inter" href="#price">
                     стоимость
                     <!-- <img src="./image/Vector 2.png" alt="Overlay Image" class="overlay-image"> -->
-                </div>
-                <div class="inter">
+                </a>
+                <a class="inter" href="#record">
                     запись
                     <!-- <img src="./image/Vector 2.png" alt="Overlay Image" class="overlay-image"> -->
-                </div>
+                </a>
             </div>
         </div>
         <div id="main" class="block">
@@ -56,16 +56,18 @@
                 <img src="./image/main.png"/>
             
         </div>
-        <div class="block">
-            <div id="run-line">
-                <div class="montserrat">
-                    КТО МЫ?
-                </div>
-                <div>
-                    <img src="./image/Group 23.png">
-                </div>
-                <div class="montserrat">
-                    КТО МЫ?
+        <div class="block" id="us">
+            <div class="marquee-container">
+                <div class="marquee-content" id="run-line">
+                    <div class="montserrat">
+                        КТО МЫ?
+                    </div>
+                    <div>
+                        <img src="./image/Group 23.png">
+                    </div>
+                    <div class="montserrat">
+                        КТО МЫ?
+                    </div>
                 </div>
             </div>
             <div class="info-us">
@@ -87,7 +89,7 @@
         </div>
         
     </div>
-    <div class="block-gray block">
+    <div class="block-gray block" id="tour">
         <div class="wrapper2">
             <div class="vertical-justify">
                 <div class="montserrat2">
@@ -187,7 +189,7 @@
         </div>
         
     </div>
-    <div class="block block-gray">
+    <div class="block block-gray" id="programm">
         <div class="program">
             <div>
                 <div class="montserrat2 days">ПРОГРАММА</div>
@@ -231,22 +233,24 @@
                     крупный населённый пункт на острове. Всего на Ольхоне<br/>
                     проживает 1500 человек, из них 1300 — в Хужире. Посещение<br/>
                     краеведческого музея.<br/>
-                     Размещение на турбазе в тёплых домиках. Баня. Ужин.<br/><br/></div>
+                    Размещение на турбазе в тёплых домиках. Баня. Ужин.<br/><br/></div>
                 <img src="./image/huzir.png">
             </div>
         </div>
         
     </div>
-    <div class="block block-price">
-        <div id="run-line">
-            <div class="montserrat">
-                СТОИМОСТЬ
-            </div>
-            <div>
-                <img src="./image/Group 23.png">
-            </div>
-            <div class="montserrat">
-                СТОИМОСТЬ
+    <div class="block block-price" id="price">
+        <div class="marquee-container">
+            <div class="marquee-content" id="run-line">
+                <div class="montserrat">
+                    СТОИМОСТЬ
+                </div>
+                <div>
+                    <img src="./image/Group 23.png">
+                </div>
+                <div class="montserrat">
+                    СТОИМОСТЬ
+                </div>
             </div>
         </div>
         <div class="block-price2 vertical-margin test">
@@ -345,7 +349,7 @@
             <img src="./image/cheers.png" class="horizontal-margin half-sizing">
         </div>
     </div>
-    <div class="block block-gray inblock-padding">
+    <div class="block block-gray inblock-padding" id="record">
         <div class="wrapper">
             <div class="half-sizing" style="align-self: flex-start;">
                 <p class="montserrat3" style="margin-bottom: 32px;">
@@ -356,24 +360,24 @@
                     Присоединяйтесь к экспедиции по льду и окунитесь в мир тишины и бескрайней красоты!
                 </p>
             </div>
-            <div class="half-sizing">
+            <form class="half-sizing" id="form">
                 <div class="input">
-                    <p class="inter">Имя</p>
+                    <input type="text" class="inter" placeholder="Имя"/>
                 </div>
                 <div class="input">
-                    <p class="inter">Номер телефона</p>
+                    <input type="tel" class="inter" placeholder="Номер телефона"/>
                 </div>
                 <div class="input">
-                    <p class="inter">Электронная почта</p>
+                    <input type="email" class="inter" placeholder="Электронная почта"/>
                 </div>
                 <div class="input">
-                    <p class="inter">Выберите дату</p>
+                    <input type="date" class="inter" placeholder="Выберите дату"/>
                 </div>
                 <div class="input">
-                    <p class="inter">Количество человек</p>
+                    <input type="number" class="inter" placeholder="Количество человек"/>
                 </div>
-                <button class="cta-button inter">Отправить</button>
-            </div>
+                <button type="submit" class="cta-button inter">Отправить</button>
+            </form>
         </div>
     </div>
     <div class="footer">
@@ -396,4 +400,10 @@
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Сообщение отправлено!');
+    });
+</script>
 </html>
