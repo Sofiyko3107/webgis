@@ -285,6 +285,11 @@ input:focus {
     height: 54px;
     margin-top: 8px;
     margin-bottom: 56px;
+    transition: background-color 0.3s ease-out;
+}
+
+button {
+    border: none;
 }
 
 .cta-button:hover {
@@ -401,6 +406,19 @@ input:focus {
     grid-template-columns: 1fr 18px 1fr;
     padding-top: 56px;
 }
+
+a {
+    text-decoration: none;
+}
+
+.anchor {
+    color: #1E1E1E;
+    transition: color 0.15s ease-out;
+}
+
+.anchor:hover {
+    color: #969696;
+  }
 
 @media (max-width: 1200px) {
     .montserrat {
